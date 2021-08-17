@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+  
+
+.products-container {
+    display: grid;
+    grid-template-columns: calc(25% - 30px) calc(25% - 30px) calc(25% - 30px) calc(25% - 30px);
+    grid-gap: 40px 40px;
+  }
+
+.product {
+    padding:20px 10px;
+    border: 1px solid black;
+}
+
+.product-property {
+    text-align: center;
+}
+.form-field {
+  width: 40%;
+  margin-top:10px;
+}
+
+span {
+  color:red;
+}
+
+@media only screen and (max-width: 800px) {
+  .products-container {
+    display: block;
+    margin: 80px auto;
+    width:80%;
+  }
+
+  .product {
+    margin-bottom: 30px;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+}
+
